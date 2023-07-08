@@ -1,0 +1,136 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#gallery {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+#gallery ul {
+	float: left;
+	width: 100%;
+	padding: 2% 0px 0px 0px;
+}
+#gallery ul li img {
+	width: 196px;
+	padding: 2px;
+	height: 130px;
+}
+#gallery ul li {
+	float: left;
+	background: none;
+	list-style-type: none;
+	border: 1px solid #666;
+	margin: 0px 3px 10px 3px;
+}
+#gallery ul li a {
+	display: block;
+}
+#gallery ul li a:hover, #gallery ul li a:focus {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	khtml-opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+#overlay {
+	z-index: 4999;
+	background-color: #000;
+}
+#jb-window {
+	z-index: 5000;
+}
+#jb-loading { /* For semantic value, not to be seen */
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+#jb-window.reactive {
+	background: url(../images/reactive-overlay.png) right top no-repeat;
+}
+#jb-window-inner {
+	color: #ccc;
+	background-color: #000;
+}
+#jb-window.loading #jb-window-inner {
+	background: url(../images/loading-black-on-white.gif) center center no-repeat;
+}
+.type-ajax #jb-window-content, .type-fragment #jb-window-content {
+}
+.type-media #jb-window-content {
+}
+#jb-window-content:focus {
+	outline: none;
+}
+#jb-window-content .caption {
+	color: #fff;
+	clear: both;
+	padding: 2%;
+	display: block;
+	font-size: 12px;
+	background-color: #000;
+	text-transform: uppercase;
+}
+#jb-close-button img {
+	border: 0px;
+}
+#jb-window.error-no-content #jb-window-content {
+	padding-left: 70px;
+	background: url(../images/alert-64.png) left center no-repeat;
+}
+#prev, #next { /* Image replacement on gallery controls */
+	height: 0;
+	width: 49px;
+	padding-top: 85px;
+	background: url(../images/gallery-controls-sprite.png) left top no-repeat;
+}
+#next {
+	background-position: -49px top;
+}
+#prev:hover, #prev:focus {
+	background-position: left -85px;
+}
+#next:hover, #next:focus {
+	background-position: -49px -85px;
+}
+#prev.disabled, #next.disabled {
+	cursor: default;
+	background: none;
+}
+
+@media only screen and (min-width:960px) and (max-width:1389px) {
+}
+
+@media only screen and (min-width:768px) and (max-width:990px) {
+#jb-window-content .caption {
+	font-size: 11px;
+}
+#gallery ul li img {
+	width: 138px;
+	height: 100px;
+}
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media only screen and (max-width:767px) {
+#jb-window-content .caption {
+	font-size: 10px;
+}
+#gallery ul li img {
+	width: 114px;
+	height: 90px;
+}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+#jb-window-content .caption {
+	font-size: 11px;
+}
+#gallery ul li img {
+	width: 114px;
+	height: 90px;
+}
+}

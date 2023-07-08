@@ -1,0 +1,180 @@
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #menu-button {
+	z-index: 4000;
+	display: block;
+	list-style: none;
+}
+#cssmenu:after, #cssmenu ul:after {
+	content: ".";
+	clear: both;
+	display: block;
+	line-height: 0;
+	visibility: hidden;
+}
+#cssmenu #menu-button {
+	display: none;
+}
+#cssmenu ul {
+	border-top: 1px dotted #bcbcbc;
+}
+#cssmenu ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+	transition: all 0.5s ease;
+}
+#cssmenu ul li a {
+	position: relative;
+	color: #666;
+	display: block;
+	padding: 12px 50px;
+	font-size: 15px;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+#cssmenu ul li:hover a, #cssmenu .on a {
+	position: relative;
+	color: #0253ac;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#cssmenu ul li::before, #cssmenu ul li a::before {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 0%;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#cssmenu ul li:hover:before, #cssmenu ul li a:hover:before {
+	left: 40%;
+	visibility: visible;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#cssmenu a.on:before, #cssmenu .on:before, #cssmenu .active:before, #cssmenu .highlight:before {
+	content: url(../images/cha.jpg);
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 40%;
+	visibility: visible;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+@media screen and (min-width:2560px) {
+#cssmenu ul li a {
+	font-size: 20px;
+	padding: 14px 31px;
+}
+}
+@media screen and (min-width:960px) and (max-width:1389px) {
+#cssmenu ul li a {
+	font-size: 14px;
+	padding: 12px 26px;
+}
+}
+@media only screen and (min-width:768px) and (max-width:990px) {
+#cssmenu ul li a {
+	font-size: 12px;
+	padding: 12px 18px;
+}
+}
+@media all and (max-width: 768px) {
+#cssmenu ul, #cssmenu ul ul, #cssmenu ul ul ul, #cssmenu ul, #cssmenu ul li ul, #cssmenu ul li:hover ul, #cssmenu ul ul li:hover ul, #cssmenu ul ul ul li:hover ul {
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	width: 40%;
+	display: none;
+	float: right;
+	position: relative;
+	opacity: 1;
+	margin-right: 4%;
+	border: 0;
+}
+#cssmenu ul li {
+	float: left;
+	width: 100%;
+	border-right: 0px;
+	text-align: center;
+}
+#cssmenu ul li a {
+	width: 100%;
+	font-size: 13px;
+	padding: 8px 0;
+	border-bottom: 1px solid #bcbcbc;
+}
+#cssmenu ul ul li a {
+	width: 90%;
+	padding: 5px 5%;
+}
+#cssmenu ul ul ul li a {
+	width: 70%;
+	padding: 5px 15%;
+}
+#cssmenu > ul > li.has-sub > a:after, #cssmenu > ul > li.has-sub > a:before, #cssmenu ul ul li.has-sub > a:after, #cssmenu ul ul li.has-sub > a:before {
+	display: none;
+}
+#cssmenu #menu-button {
+	color: #0253ac;
+	display: block;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: right;
+	text-transform: uppercase;
+}
+#cssmenu #menu-button:hover {
+	color: #666;
+}
+#cssmenu #menu-button.active {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#cssmenu #menu-button:after {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+#cssmenu ul li a:hover {
+	background-color: #f5f5f5;
+}
+#cssmenu ul li:hover:before, #cssmenu ul li a:hover:before {
+	visibility: hidden;
+}
+#cssmenu .on:before {
+	visibility: hidden;
+}
+#cssmenu .on {
+	background-color: #f5f5f5;
+}
+}
+@media only screen and (max-width:767px) {
+#cssmenu ul, #cssmenu ul ul, #cssmenu ul ul ul, #cssmenu ul, #cssmenu ul li ul, #cssmenu ul li:hover ul, #cssmenu ul ul li:hover ul, #cssmenu ul ul ul li:hover ul {
+	width: 100%;
+}
+#cssmenu #menu-button {
+	font-size: 14px;
+}
+#cssmenu ul li a {
+	padding: 4% 0;
+	font-size: 12px;
+}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+#cssmenu ul li a {
+	font-size: 13px;
+}
+}

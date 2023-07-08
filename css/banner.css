@@ -1,0 +1,80 @@
+.banner {
+	position: relative;
+}
+.rslides {
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+}
+.rslides li {
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+.rslides li:first-child {
+	float: left;
+	display: block;
+	position: relative;
+}
+.rslides img {
+	width: 100%;
+	float: left;
+	height: auto;
+	display: block;
+}
+.prev, .next {
+	top: 45%;
+	width: 21px;
+	height: 36px;
+	z-index: 2000;
+	position: absolute;
+}
+.prev {
+	left: 5%;
+	background: url(../images/arr_lft.png) 0 0 no-repeat;
+}
+.next {
+	right: 5%;
+	background: url(../images/arr_rht.png) 0 0 no-repeat;
+}
+
+@media screen and (min-width:2560px) {
+}
+
+@media only screen and (min-width:1390px) and (max-width:1440px) {
+}
+
+@media only screen and (min-width:960px) and (max-width:1389px) {
+.prev, .next {
+	top: 40%;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:990px) {
+.prev, .next {
+	top: 35%;
+}
+}
+
+@media only screen and (min-device-width : 991px) and (max-device-width : 1024px) {
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media only screen and (max-width:767px) {
+.prev, .next {
+	top: 0%;
+	background-size: 70%;
+}
+.prev {
+	left: 80%;
+}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+}

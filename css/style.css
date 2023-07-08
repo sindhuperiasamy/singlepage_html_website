@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+	font-family: 'Open Sans', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	line-height: 19px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+audio, canvas, video {
+	display: inline-block;
+ *display: inline;
+ *zoom: 1;
+}
+audio:not([controls]) {
+	display: none;
+}
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+sub, sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	width: auto\9;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+button, input, select, textarea {
+	margin: 0;
+	font-size: 100%;
+	vertical-align: middle;
+}
+button, input {
+ *overflow: visible;
+	line-height: normal;
+}
+ button::-moz-focus-inner, input::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+	cursor: pointer;
+}
+input[type="search"] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+ -webkit-appearance: none;
+}
+input::-moz-focus-inner {
+ border: 0;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	outline: 0;
+	text-decoration: underline;
+}
+ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+ color: #333;
+ font-family: 'Varela Round', sans-serif;
+}
+small {
+	font-size: 85%;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+cite {
+	font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Lato', sans-serif;	width: 100%;
+	margin: 0;
+	color: #fff;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	text-rendering: optimizelegibility;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	
+	font-size: 1.71428571em;
+}
+h3 {
+	font-size: 1.42857142em;
+}
+h4 {
+	font-size: 1.28571429em;
+}
+h5 {
+	font-size: 1.07142857em;
+}
+h6 {
+	font-size: 1em;
+}
+p {
+	margin-bottom: 2%;
+	font-size:15px;
+	font-weight:400;
+	line-height:24px;
+	}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+}
+.se-pre-con {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+	position: fixed;
+	background: url(../images/yuva_loading.gif) center no-repeat #fff;
+}
+.underline {
+	border-bottom: 1px solid #000;
+	display: inline-block;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.space {
+	float: left;
+	width: 100%;	
+	margin: 5% 0 0;
+}
+.tDecoration_none {
+	text-decoration: none !important;
+}
+.fixed {
+	width: 100%;
+	margin: 0 auto;
+	z-index: 9999;
+	position: fixed;
+}
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+ *zoom: 1;
+}
+.container:before, .container:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.container:after {
+	clear: both;
+}
+.container_full {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+ *zoom: 1;
+}
+.container_full:before, .container_full:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.container_full:after {
+	clear: both;
+}
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.width100 {
+	float: left;
+	width: 100%;
+}
+.width50 {
+	float: left;
+	width: 50%;
+}
+.logo {
+	margin:0 auto;
+	width: 40%;
+	padding:0;
+	text-align:center;
+}
+.header-left {
+	float: right;
+	width: 40%;
+	padding: 3% 0;
+}
+.header-left a {
+	color: #000;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+.header-left a:hover {
+	text-decoration: underline;
+}
+.header-login, .header-social {
+	color: #000;
+	text-align: right;
+}
+.header-social {
+	margin-top: 2%;
+}
+.header-social a {
+	margin: 0 0 0 2%;
+}
+.header-social img {
+	width: 5%;
+}
+.header-social a:hover img {
+	opacity: 0.6;
+}
+.menu {
+	text-align:center;
+	background-color: #fff;
+}
+.mb_visible {
+	display: none;
+}
+
+@media screen and (min-width:2560px) {
+* {
+	font-size: 21px;
+	line-height: 26px;
+}
+.container {
+	width: 1200px;
+}
+}
+
+@media only screen and (max-width:1389px) {
+* {
+	font-size: 15px;
+	line-height: 18px;
+}
+.container {
+	width: 960px;
+}
+}
+
+@media only screen and (max-width:990px) {
+* {
+	font-size: 14px;
+	line-height: 16px;
+}
+.container {
+	width: 768px;
+}
+.header-social img {
+	width: 6%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+* {
+	font-size: 14px;
+	line-height: 16px;
+}
+.container {
+	width: 740px;
+}
+.logo {
+	width: 25%;
+}
+}
+
+@media only screen and (max-width:767px) {
+* {
+	font-size: 16px;
+	line-height: 18px;
+}
+.container {
+	width: 300px;
+}
+.mb_none {
+	display: none;
+}
+.mb_visible {
+	display: block !important;
+}
+.logo {
+	width: 100%;
+}
+.header-left a {
+	font-size: 0.6em;
+}
+.header-social img {
+	width: 14%;
+}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+* {
+	font-size: 15px;
+	line-height: 18px;
+}
+.container {
+	width: 420px;
+}
+.header-social img {
+	width: 11%;
+}
+}
